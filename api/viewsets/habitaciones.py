@@ -17,7 +17,7 @@ class HabitacionViewSet(mixins.CreateModelMixin,
                     mixins.DestroyModelMixin,
                     mixins.ListModelMixin,
                     viewsets.GenericViewSet):
-    """Circle view set."""
+    """Habitacion view set."""
 
     serializer_class = HabitacionModelSerializer
     # permission_classes = (IsAuthenticated,)

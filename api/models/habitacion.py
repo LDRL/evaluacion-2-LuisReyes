@@ -12,8 +12,7 @@ class Habitacion(BaseModel):
         ('triple', 'Triple'),
         ('matrimonial', 'Matrimonial'),
     )
-    tipo = models.CharField(max_length=20, choices=TIPO)
-     
+    tipo = models.CharField(max_length=20, choices=TIPO, default='Simple')
     def _str_(self):
         """Return tipo."""
         return self.TIPO

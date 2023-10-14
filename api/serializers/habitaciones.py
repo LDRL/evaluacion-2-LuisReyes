@@ -14,6 +14,9 @@ class HabitacionModelSerializer(serializers.ModelSerializer):
         """Meta class."""
 
         model = Habitacion
+        fields = (
+            'tipo',
+        )
         
 
     # def validate(self, data):
